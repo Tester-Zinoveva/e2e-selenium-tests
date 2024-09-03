@@ -123,5 +123,10 @@ describe('Order Form End-to-End Tests', function () {
             await orderPage.checkAllCheckboxes(OrderPageLocators.locators.addCommentCheckbox)
             await orderPageAssertions.assertTextDisplayed(driver, OrderPageLocators.commentText, 'Добавить комментарий к заказу')
         });
+                //it('should click the "Оформить" button and verify the order submission', async function () {
+          //  await orderPage.clickSubmitButton();
+            // Проверка успешной отправки заказа, например, наличие сообщения о подтверждении
+           // await orderPageAssertions.assertOrderConfirmationDisplayed(driver);
+        //});
     });
 });
